@@ -14,4 +14,4 @@ def greeting(*args):
 
 greeting("Alice", "Bob", "Charlie")      
 
-    
+    # arguments can be passed as a list
