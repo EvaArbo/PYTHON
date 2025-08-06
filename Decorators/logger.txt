@@ -1,0 +1,2 @@
+This is a log entry. + '
+'function:counter time taken 28.919652938842773 seconds 
