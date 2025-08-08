@@ -3,7 +3,12 @@ from datetime import datetime
 def write_file(f_name,txt):
     with open(f_name,'a') as file:
         file.write(f"{txt} \n")
+
 class Human():
+    species = "Homo sapiens"  # Static attribute shared by all instances
+    genus = "Homo"
+    count = 0
+
     def __init__(self, name, gender , age):
         print("Human class initialized")
         print(name)
@@ -18,10 +23,10 @@ class Human():
         else:
             self._ribs=23
             self._curse="Endure"
+        self.__class__.count=self.__class__.count+1
         
     def  another_method(self):
         print("This is another method in the Human class")
-
         #Getter for name
     @property
     def name(self):
@@ -51,6 +56,7 @@ print("Ribs:",Adam._ribs)
 print("Curse:",Adam._curse)
 print(Adam._name)  # Accessing the getter for name
 Adam.name = "Adam Smith"  # Using the setter to change the name
+print("Adam species:", Adam.species)  # Accessing the static attribute
 
 print()
 
@@ -64,3 +70,7 @@ print("Ribs:",Evah._ribs)
 print("Curse:",Evah._curse)
 print(Evah._name)  # Accessing the getter for name
 Evah.name = "Evah Johnson"  # Using the setter to change the name
+print("Evah species:", Evah.species)  # Accessing the static attribute
+print("Species:", Human.species)  #
+print("Genus:", Human.genus)  # Accessing the static attribute
+print("Total Humans created:", Human.count)  # Accessing the static attribute
