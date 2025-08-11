@@ -46,6 +46,16 @@ class Human():
         write_file(f_name="logger.txt", txt=f"Name set at {now} to {NewName} from {self._name}")
         self._name =NewName
         return self._name
+    @classmethod
+    def get_general_info(cls):
+        print("Species:", cls.species)
+        print("Genus:", cls.genus)
+        print("Total Humans created:", cls.count)
+Adam= Human(name="Adam", gender="Male", age=24)
+Evah= Human(name="Evah", gender="Female", age=23)
+Human.get_general_info()  # Call the class method to print general info
+
+        
 #setters are used to set the value of an attribute
 
 
@@ -74,3 +84,5 @@ print("Evah species:", Evah.species)  # Accessing the static attribute
 print("Species:", Human.species)  #
 print("Genus:", Human.genus)  # Accessing the static attribute
 print("Total Humans created:", Human.count)  # Accessing the static attribute
+
+    
