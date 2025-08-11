@@ -55,34 +55,36 @@ Adam= Human(name="Adam", gender="Male", age=24)
 Evah= Human(name="Evah", gender="Female", age=23)
 Human.get_general_info()  # Call the class method to print general info
 
-        
+print("Name:", Adam.name)
+print("Name:", Evah.name)
+                
 #setters are used to set the value of an attribute
 
 
-Adam = Human(name="Adam", gender="Male", age=24)
-Adam.another_method()
-print("Name:", Adam._name)
-print("Ribs:",Adam._ribs)
-print("Curse:",Adam._curse)
-print(Adam._name)  # Accessing the getter for name
-Adam.name = "Adam Smith"  # Using the setter to change the name
-print("Adam species:", Adam.species)  # Accessing the static attribute
+# Adam = Human(name="Adam", gender="Male", age=24)
+# Adam.another_method()
+# print("Name:", Adam._name)
+# print("Ribs:",Adam._ribs)
+# print("Curse:",Adam._curse)
+# print(Adam._name)  # Accessing the getter for name
+# Adam.name = "Adam Smith"  # Using the setter to change the name
+# print("Adam species:", Adam.species)  # Accessing the static attribute
 
-print()
+# print()
 
-Evah= Human(name="Evah", gender="Female", age=21) #Here i used **kwargs to pass the arguments
-Evah.another_method()
-#initializer is same as constructor in javascript
-#initializer is called when an object is created
-#The purpose of the initializer is to initialize the attributes of the class
-print("Name:", Evah._name)
-print("Ribs:",Evah._ribs)
-print("Curse:",Evah._curse)
-print(Evah._name)  # Accessing the getter for name
-Evah.name = "Evah Johnson"  # Using the setter to change the name
-print("Evah species:", Evah.species)  # Accessing the static attribute
-print("Species:", Human.species)  #
-print("Genus:", Human.genus)  # Accessing the static attribute
-print("Total Humans created:", Human.count)  # Accessing the static attribute
+# Evah= Human(name="Evah", gender="Female", age=21) #Here i used **kwargs to pass the arguments
+# Evah.another_method()
+# #initializer is same as constructor in javascript
+# #initializer is called when an object is created
+# #The purpose of the initializer is to initialize the attributes of the class
+# print("Name:", Evah._name)
+# print("Ribs:",Evah._ribs)
+# print("Curse:",Evah._curse)
+# print(Evah._name)  # Accessing the getter for name
+# Evah.name = "Evah Johnson"  # Using the setter to change the name
+# print("Evah species:", Evah.species)  # Accessing the static attribute
+# print("Species:", Human.species)  #
+# print("Genus:", Human.genus)  # Accessing the static attribute
+# print("Total Humans created:", Human.count)  # Accessing the static attribute
 
     
