@@ -1,3 +1,6 @@
+#Polymorphism in Python is the ability to present the same interface for different data types.
+#Taking advantage of polymorphism allows us to write more generic and reusable code.
+#Taking the same method to implement different functionalities in different classes.
 class Shape:
     def __init__(self, name):
         self.name= name
