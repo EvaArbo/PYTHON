@@ -6,6 +6,9 @@ class Shape:
         self.name= name
     def describe(self):
         print(f"This shape is called {self.name}")
+    def area(self):
+        print(f"For shape {self.name}, area is not defined")
+        return None
 shape1= Shape(name="Circle")
 shape1.describe()
 #Inheritance allows a class to inherit attributes and methods from another class.
@@ -27,6 +30,15 @@ class Circle(Shape):
         area = 3.14 * (self.radius ** 2)
         print(f"The area of the {self.name} is {area}")
         return area
+class triangle(Shape):
+    def __init__(self, name, base, height):
+        super().__init__(name)  # Call the constructor of the parent class
+        self.base = base
+        self.height = height
+    def area(self):
+        area = 0.5 * self.base * self.height
+        print(f"The area of the {self.name} is {area}")
+        return area
 
 r1 = Rectangle(name="Rectangle", length=5, width=3)
 r1.describe()  # Call the method from the parent class
@@ -35,6 +47,10 @@ r1.area()  # Call the method from the child class
 c1 = Circle(name="Circle", radius=4)
 c1.describe()  # Call the method from the parent class
 c1.area()  # Call the method from the child class
+
+t1= triangle(name="Triangle", base=4, height=3)
+t1.describe()  # Call the method from the parent class
+t1.area()  # Call the method from the child class
 
     
         
