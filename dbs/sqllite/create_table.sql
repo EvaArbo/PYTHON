@@ -1,4 +1,6 @@
 	
+DROP TABLE IF EXISTS student;
+DROP TABLE IF EXISTS parent;
 CREATE TABLE student(
     id SERIAL PRIMARY KEY
 );
@@ -6,4 +8,7 @@ CREATE TABLE student(
 CREATE TABLE parent(
     id SERIAL PRIMARY KEY
 );
+
+
+
 
