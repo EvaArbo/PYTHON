@@ -2,12 +2,6 @@
     "sqltools.connections": [
         {
             "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "Eva",
-            "database": "${workspaceFolder:intro}/dbs/sqllite/db.db"
-        },
-        {
-            "previewLimit": 50,
             "server": "aws-0-ap-south-1.pooler.supabase.com",
             "port": 5432,
             "driver": "PostgreSQL",
@@ -15,6 +9,12 @@
             "database": "postgres",
             "username": "postgres.qmtomdynrkhdyyyrdpjs",
             "password": "P4+2ygpUyL+sV7v"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Eva",
+            "database": "/home/code/Music/PYTHON/dbs/sqllite/db.db"
         }
     ],
     "sqltools.useNodeRuntime": true
