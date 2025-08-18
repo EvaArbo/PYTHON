@@ -18,9 +18,10 @@
 -- email ='alice@gmail.com'
 
 --filter by AND
-SELECT * FROM student
+SELECT name, pocket_money FROM student
 WHERE pocket_money>10
 AND pocket_money<51
+LIMIT 5
 
 --SELECT * FROM student
 --ORDER BY name ASC
