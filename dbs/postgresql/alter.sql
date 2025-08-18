@@ -3,9 +3,9 @@
 --ALTER STATEMENT
 -- ALTER TABLE <table> <instruction<add, drop> <column>>
 -- Common Sense
--- ALTER TABLE student 
--- ADD 
--- pocket_money INTEGER;
+ ALTER TABLE student 
+ ADD 
+ pocket_money INTEGER;
 -- DEFAULT VALUE or MAKE IT NULL
 -- UNIQUE
 
@@ -18,7 +18,7 @@
 -- ADD THE DATA
 -- ALTER STAMENT TO CONSTRAIN THE COLUMN
 
-ALTER TABLE student drop
-COLUMN is_married;
+--ALTER TABLE student drop
+--COLUMN is_married;
 
 -- COMMON SENSE
