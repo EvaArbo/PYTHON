@@ -8,3 +8,7 @@ pipenv install "psycopg[binary,pool]"
 #alembic
 alembic init alembic
 pipenv install "psycopg[binary,pool]" SQLAlchemy alembic python-dotenv
+#creating migrations 
+alembic revision --autogenerate -m"initialize tables"
+#adding table in migrations 
+alembic upgrade head
