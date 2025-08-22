@@ -7,3 +7,4 @@ pipenv install "psycopg[binary,pool]"
 #creating virtual environment
 #alembic
 alembic init alembic
+pipenv install "psycopg[binary,pool]" SQLAlchemy alembic python-dotenv
