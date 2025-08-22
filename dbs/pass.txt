@@ -12,3 +12,4 @@ pipenv install "psycopg[binary,pool]" SQLAlchemy alembic python-dotenv
 alembic revision --autogenerate -m"initialize tables"
 #adding table in migrations 
 alembic upgrade head
+#env stands for environmental viriables
