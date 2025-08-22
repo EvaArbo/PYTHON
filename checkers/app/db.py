@@ -9,6 +9,7 @@ import os
 load_dotenv()
 
 drivername=os.getenv("drivername")
+host=os.getenv('host')
 
 db_credentials={
     "drivername":os.getenv("drivername"),
