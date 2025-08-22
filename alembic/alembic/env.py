@@ -6,9 +6,18 @@ from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
-
-
-sys.path.append("/home/arthur-codex/Documents/DEV/MORINGA/SHM/shm-python/alembic/app")
+# #This will print the current path
+# print(__file__)
+# current_path = os.path.dirname(__file__)
+# print(current_path)
+# newPath=os.path.join(current_path, "../..")
+# print(newPath)
+# #This will print the absolute path
+# calculated_abs_path=os.path.abspath(newPath)
+# print(calculated_abs_path)
+# #OR THIS
+#Its not recommended bacause you'll have to change your path manually
+sys.path.append("/home/code/Music/PYTHON/alembic/app")
 
 from app import Base
 from app.models import *
@@ -29,9 +38,7 @@ if config.config_file_name is not None:
 # from myapp import mymodel
 target_metadata = Base.metadata
 
-# ABS /home/arthur-codex/Documents/DEV/MORINGA/SHM/shm-python/alembic/app
-
-
+# ABS /home/code/Music/PYTHON/alembic/app
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
