@@ -19,10 +19,11 @@ DATABASE_URL=URL.create(**db_credentials)
 
 engine=create_engine(DATABASE_URL,echo=True,future=True)
 
-
+#auto flash false query stays in the memmory untill you commit
 SessionLocal=sessionmaker(bind=engine,autoflush=False,autocommit=False)
 
 #BASE
+#you only pass the BASE to the class if its a table
 Base=declarative_base()
 
  

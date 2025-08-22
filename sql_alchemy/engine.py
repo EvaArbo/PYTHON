@@ -10,9 +10,12 @@ db_credentials={
 }
 
 #Build DB URL
+#kwags of database cridentials
 DATABASE_URL=URL.create(**db_credentials)
 
 #create engine
+#the echo  tells sql alchemy to log all the generated sql to the console
+
 engine=create_engine(DATABASE_URL,echo=True,future=True)
 
 with engine.connect() as conn:

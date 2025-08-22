@@ -1,2 +1,2 @@
 from .student import Student
-from .parent import Parent
+from .parents import Parents

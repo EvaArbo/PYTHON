@@ -1,6 +1,8 @@
 
 from sqlalchemy.orm import DeclarativeBase,Mapped,mapped_column,Session
 from sqlalchemy import Text,Boolean,select
+from sqlachemy import String
+from sqlachemy import List
 
 from engine import engine
 

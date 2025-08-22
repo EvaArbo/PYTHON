@@ -1,1 +1,9 @@
 P4+2ygpUyL+sV7v
+export PIPENV_VENV_IN_PROJECT=1
+pipenv install
+pipienv install SQLALchemy
+pipenv shell
+pipenv install "psycopg[binary,pool]"
+#creating virtual environment
+#alembic
+alembic init alembic
